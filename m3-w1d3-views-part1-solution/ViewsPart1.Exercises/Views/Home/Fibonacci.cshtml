@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+@{
+    int previous = 0;
+    int current = 1;
+    int sum;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Fibonnaci</title>
+    <link href="~/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <ul>
+            @for (int i = 1; i <= 25; i++)
+            {
+                sum = previous + current;
+                previous = current;
+                current = sum;
+
+                <li>@sum</li>
+                
+            }
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+html {
+  font: 96px Courier;
+  color: white;
+}
+.box {
+  padding: 50px;
+  width: 60px;
+}
+.odd {
+  background-color: #ee3e64;
+}
+.even {
+  background-color: #44accf;
+}
+#box_1, #box_8 {
+  margin-left: 160px;
+}
+#box_2, #box_7 {
+  margin-left: 320px;
+}
+#box_3, #box_6 {
+  margin-left: 480px;
+}
+#box_4, #box_5 {
+  margin-left: 640px;
+}

@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+}
+
+@{
+    string word = Request.QueryString["word"];
+    int count = int.Parse(Request.QueryString["count"]);
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Echo</title>
+    <link href="~/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+    <ul>
+        @for (int i = count; i >= 0; i--)
+        {
+            string fontSize = i.ToString() + "px";
+            <li style="font-size: @fontSize">@word</li>
+        }
+    </ul>
+    </div>
+</body>
+</html>
